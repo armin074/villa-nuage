@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="landing.css" rel="stylesheet">
+    <title>Villa Nuage France</title>
+   
+</head>
+<body>
+   
+<main>
+  <div class="hero">
+      <div class="overlay"></div>
+      <video class="video-bg" autoplay loop muted>
+          <source src="assets/img/villa.mp4"
+            type="video/mp4">
+      </video>
+      <img src="assets/img/Villa-white-logo.png"> <br />
+      <a href="main.html">Explore</a>
+  </div>
+</main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+<script>
+
+    const tl = gsap.timeline()
+    tl.from(".hero img", {duration:3, y:-150, stagger: .6, opacity: 0, scale: 0})
+      .from(".hero a", {duration:2, y:150, stagger: .6, opacity: 0, scale: 0}, "-=3")  
+
+</script>
+
+
+</body>
+</html>
