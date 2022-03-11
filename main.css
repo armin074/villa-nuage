@@ -24,10 +24,25 @@ body{
     font-family: 'SF-Pro-Display-Bold';
     src: url(assets/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF);
 }
-
 p{
     font-family: 'Gilroy';
     font-size: 14px;
+}
+.about-below {
+
+    background-color: #6E5140;
+
+}
+.accordion-flush .accordion-collapse {
+    border: none!important;
+}
+.accordion-button{
+    color: #111!important;
+    border: none!important;
+}
+.collapsed {
+    color: #6E5140!important;
+    background-color: #fcdac7;
 }
 .first{
     display: flex;
@@ -62,7 +77,7 @@ p{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
     mix-blend-mode: overlay;
     background: #4d4c4c;
     z-index: 1;
@@ -107,6 +122,18 @@ p{
     object-fit: cover;
     margin: 0 auto;
     padding-bottom: 50px;
+}
+.karusel img{
+    
+        width: auto;
+        height: 600px;
+        max-height: 600px;
+      
+      
+}
+.hiking-img{
+    width: 75%;
+    height: 100%;
 }
 @media (min-width: 1000px){
     .video-bg{
@@ -314,8 +341,11 @@ object-fit: cover;
 }
 .amenities-section{
     background-color: #ffe4d3;
+    
 
 }
+.entertainment h1{font-size: 62px;}
+.accommodation{font-size: 62px;padding-bottom: 10px;}
 .amenities-section h5{
     font-size: 62px;;
 }
@@ -331,6 +361,10 @@ object-fit: cover;
 #amenities-number {
     font-size: 36px;
 }
+.entertainment{
+    
+    background-color: #fff9f6;
+}
 .entertainment .tennis-img{
     width:100%;
     height:80%;
@@ -340,12 +374,14 @@ object-fit: cover;
     font-size: 24px;
     font-weight: 600;
 }
-.entertainment .hiking-img {
-    width: 70%;
-    height: 80%;
+.ent-hiking-img {
+    
+    width:500px;
+    height: 400px;
 }
 .entertainment {
-    padding: 0 50px 0 50px;
+    padding: 0 50px 50px 50px;
+    
 }
 .entertainment h2{
     font-size: 62px;
@@ -357,4 +393,60 @@ object-fit: cover;
     height: 80%;
     width:90%;
     object-fit: contain;
+}
+
+#services {
+    background-color: #6e5140;
+}
+.services img {
+    width: 75px;
+    height:75px;
+}
+.services-2 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.services-2 img {
+    width: 75px;
+    height: 75px;
+    margin-left: -25px;
+    padding-bottom: 10px;
+}
+.cuisine {
+    background: url(assets/img/Cuisine.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    height: 100vh!important
+    
+}
+.cuisine-eating{
+    padding: 50px;
+}
+.cuisine-eat {
+    margin-top: 10%;
+}
+
+.cuisine-border{
+    border: 3px solid #fff;
+    padding: 50px;
+    font-weight: 600;
+    
+}
+
+.contact{
+    background-color: #6E5140;
+}
+.villa-logotip{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: #6E5140;
+    margin-bottom: -25px!important;
+}
+.footer p{
+    color: #fff!important;
+    padding-bottom: 20px!important;
 }

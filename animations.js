@@ -32,13 +32,13 @@
     let tl2 = gsap.timeline({
         scrollTrigger: {
             trigger: '.img-anim',
-            start: "top top"
+            start: "top center"
         }
     });
-    tl2.to(".img-anim", { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', ease: 'elastic'})
+    tl2.to(".img-anim", { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'})
         .from(".third p",{
             skewY:10, duration: .8, opacity: 0,y:100
-        })
+        },"-=.5")
        
 
     //
